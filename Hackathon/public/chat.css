@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    background-color: #EDE7F6;
+    display:flex;
+    height: 100vh;
+    padding: 1rem 1rem;
+}
+.left{
+    background-color: white;
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+}
+.right{
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    height: 100%;
+    width: 65%;
+    margin-left: 1rem;
+}
+.right .head{
+    width: 100%; 
+    /* background-color: antiquewhite; */
+}
+.right .head .up{
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+.right .head .up h2{
+    margin-left: 1rem;
+}
+.right .area{
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    width: 95%;
+    height: 70%;
+    /* background-color:beige; */
+}
+.right .text{
+    width: 95%;
+    margin-bottom: 0.8rem;
+}
+textarea{
+    width: 100%;
+    border: none;
+    padding: 1.4rem;
+    font-size: 1rem;
+    outline: none;
+    background: #e9e3f3;
+    border-radius: 1rem;
+}
+
+/* .message__area{
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+} */
+
+.area {
+    overflow: auto;
+}
+
+.message {
+    padding: 20px; 
+    border-radius: 4px; 
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+}
+.incoming {
+    background: #8F8BE8;
+    color: #fff;  
+}
+.outgoing {
+    background: #e9eafd;
+    color: #787986;
+    margin-left: auto;
+}
+.message h4 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #333;
+    font-size: 14px;
+}
+.left-head{
+    padding: 1rem;
+    width: 100%;
+    flex: 0.5;
+}
+.left-head h2{
+    margin-left: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+form{
+    flex: 6;
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    overflow-y: auto;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+
+}
+.card .icon{
+    width: 20%;
+    /* border: 1px solid red; */
+}
+.card .name{
+    width: 80%;
+    /* border: 1px solid blue; */
+}
+form .card{
+    display: flex;
+    justify-content:space-between;
+    padding: 0.4rem 0.4rem;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 1rem;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; */
+    border-radius: 1rem;
+    background-color: #FBFBFB;
+}

@@ -1,0 +1,260 @@
+/*---Praticle JS-----------*/
+body {
+    margin: 0;
+    background-color: hsl(240, 67%, 12%);
+    font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+.heading {
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    margin-left: 60px;
+    padding-top: 100px;
+    padding-left: 200px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+    font-size: 80PX;
+    text-shadow: 3px 4px 0 rgba(224, 215, 215, 0.2);
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 300%;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+/*
+/////////
+/////
+////
+///
+//
+*/
+
+
+/*---------------------Navbar--------------------------*/
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+body.fixed-nav .site-wrap {
+    transform: scale(1);
+}
+
+
+nav {
+    background:hsl(0, 0%, 3%);
+    top: 0;
+    width: 100%;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+body.fixed-nav nav {
+    position: fixed;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li.logo {
+    max-width: 0;
+    overflow: hidden;
+    background: white;
+    transition: all 0.5s;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+li.logo a {
+    color: black;
+}
+
+.fixed-nav li.logo {
+    max-width: 500px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    display: inline-block;
+    color: white;
+    transition: all 0.2s;
+    text-transform: uppercase;
+}
+
+.site-wrap {
+    max-width: 1000px;
+    margin: 70px 0;
+    background: hsl(240, 67%, 12%, 0);
+    padding: 40px;
+    text-align: justify;
+    transform: scale(0.98);
+    transition: transform 0.5s;
+}
+
+/*
+/////////
+/////
+////
+///
+//
+*/
+
+/*----------------Card------------------*/
+
+hr {
+  width: 60%;
+  margin: 0%;
+  border-top: 2px solid; 
+  margin-bottom: 40px;
+}
+
+
+h3 {
+    font-size: 30px;
+    color: white;
+    
+}
+
+p{
+    font-size: 14px;
+    color: wheat;
+}
+
+
+#what {
+    margin-top: 280px;
+    margin: 30px 0 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+    padding: 30px;
+    background-color: rgba(62, 84, 142, 0.767);;
+}
+
+#about {
+    margin-top: 280px;
+    margin: 30px 0 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+    padding: 30px;
+    background-color: rgba(62, 84, 142, 0.767);;
+}
+
+#register {
+    margin-top: 280px;
+    margin: 30px 0 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+    padding: 30px;
+    background-color: rgba(62, 84, 142, 0.767);;
+}
+
+
+.container {
+    padding: 2px 16px;
+}
+
+
+
+
+/*------------------Section-------------------*/
+
+.section{
+    margin-top: 300px;
+    margin-left: 100px;
+}
+
+
+/*footer*/
+footer{
+    margin-top: 50px;
+    color: white;
+    position: absolute;
+    top: 140%;
+    left: 45%;
+}
+
+/*button*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+    
+.btn{
+
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background-color: #0066CC;
+padding: 10px 30px;
+border: 2px solid #0066cc;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+margin-bottom: 10px;
+text-decoration: none;
+width: 5rem;
+margin-top: 0.5rem;
+}
+
+.btn:hover{
+
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #0066cc;
+border: solid 2px #0066cc;
+}
+
+.em{
+margin-right: 1.5rem;
+color: white;
+}
+.pw{
+margin-right: 0.1rem;
+color: white;
+}
+.form-control{
+    line-height: 1.2rem;
+    margin-top: 0.4rem;
+    margin-top: 0.2rem;
+}

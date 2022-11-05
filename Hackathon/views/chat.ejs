@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>CHROMA</title>
+</head>
+<body>
+    
+<!---
+    <%  userlist.forEach(user=>{ %>
+        <ul>
+            <li><%=user.name%></li>
+            <li><%=user.email%></li>
+            <li><%=user.food%></li>
+            <li><%=user.sport%></li>
+        </ul>
+        <a href="" role="button">Chat</a>
+   <% }) %> 
+-->
+
+   <div class="main">
+    <div class="left">
+        <div class="left-head">
+            <h2>Say hello 👋</h2>
+            <hr>
+        </div>
+        <form action="/chat"id="lich" class="list">
+        
+        <%  userlist.forEach(user=>{ %>
+
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-user fa-2x"></i></div>
+                <div class="name"><h2><%=user.name%></h2></div>
+            </div>
+        
+        <% }) %>
+
+        </form>
+    </div>
+
+
+    <div class="right">
+        <div class="head">
+            <div class="up">
+                <i class="fa-solid fa-user fa-3x"></i>
+            </div>
+            <hr>
+        </div>
+        <div class="area">
+        </div>
+        <div class="text">
+            <textarea id="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea>
+        </div>
+    </div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/client.js"></script>
+
+</body>
+</html>

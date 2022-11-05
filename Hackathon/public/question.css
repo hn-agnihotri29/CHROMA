@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.main_div{
+    background-color: aqua;
+    display: flex;
+    min-height: 100vh;
+}
+.main_div .left{
+    background-color: #262627;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left .content{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.left .content h1{
+    color: #FFFFFF;
+    font-size: 4rem;
+    text-align: center;
+}
+.left .content .img{
+    background-image: url('/pic.jpg');
+    background-size: cover;
+    height: 50%;
+    width: 100%;
+}
+.main_div .right{
+    flex: 1;
+    background-color:white;
+    /* display: flex;
+    flex-direction: column;  */
+    align-items: center;
+    justify-content: center;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+section{
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+    padding: 8rem 8rem;
+}
+#inner_div1{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+#inner_div2{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+.inner_div3{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+}
+.h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 1rem 0 4rem 0;
+}
+li{
+    font-size: 1.5rem;
+    margin-top:1rem;
+}
+.btn{
+    font-size: 1rem;
+    color: #FFFFFF;
+    border-radius: .8rem;
+    width: 30%;
+    border: none;
+    cursor: pointer;
+    margin-top: 1.2rem;
+    padding: 1rem 2rem;
+    background-color: black;
+    transition: all 0.5s;
+}
+.btn span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.btn span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s; 
+}
+.btn:hover span{
+    padding-right: 1.6rem;
+}
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+input,label{
+    cursor: pointer;
+}
+ul{
+    list-style-type: none;
+}

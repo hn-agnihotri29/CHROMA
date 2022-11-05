@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+
+    <style>
+       
+    </style>
+
+
+</head>
+
+<body>
+    
+    <div id="particles-js"></div>
+
+    <div>
+        <nav id="main">
+            <ul>
+                <li class="logo"><a href="#">CHROMA</a></li>
+                <li><a href="#what">What ?</a></li>
+                <li><a href="#register">Singup</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <div class="site-wrap">
+        <div class="heading">
+            <h1>CHROMA</h1>
+        </div>
+
+        <div class="section">
+            <div id="what">
+                <h3>What we do?</h3>
+                <hr>
+                <p>sbcahbjdmscj,asbcbaskjjaskhdasjdaskdasbdkasjdbasda <br>
+                    hasdbmasnjasdkasldajsldb ascnasclascskajbasdjsasa
+                </p>
+            </div>
+            <div id="register">
+                <h3>Register</h3>
+                <hr>
+                <form action="/login" method="POST">
+                    <div class="form-group">
+                        <label for="email" class="em">Email</label>
+                        <input type="email" class="form-control" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="pw">Password</label>
+                        <input type="password" class="form-control" name="password">
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+                <a href="./signup2" class="btn" role="button">Register</a>
+            </div>
+            <div id="about">
+                <h3>About</h3>
+                <hr>
+                <p>sbcahbjdmscj,asbcbaskjjaskhdasjdaskdasbdkasjdbasda <br>
+                    hasdbmasnjasdkasldajsldb ascnasclascskajbasdjsasa
+                </p>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        // Not a ton of code, but hard to
+        const nav = document.querySelector('#main');
+        let topOfNav = nav.offsetTop;
+
+        function fixNav() {
+            if (window.scrollY >= topOfNav) {
+                document.body.style.paddingTop = nav.offsetHeight + 'px';
+                document.body.classList.add('fixed-nav');
+            } else {
+                document.body.classList.remove('fixed-nav');
+                document.body.style.paddingTop = 0;
+            }
+        }
+
+        window.addEventListener('scroll', fixNav);
+    </script>
+    <script src="praticles.js"></script>
+    <script src="star.js"></script>
+</body>
+
+
+
+</html>
